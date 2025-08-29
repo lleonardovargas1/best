@@ -5,6 +5,7 @@ $produtos = [
         'id' => 1,
         'nome' => 'Notebook Ultra 14"',
         'categoria' => 'Notebooks',
+        'preco' => 'R$ 3.999,90',
         'descricao' => 'Processador Intel i5, 8 GB RAM, SSD 256 GB, tela 14 polegadas. Ideal para estudo e trabalho.',
         'imagem' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80'
     ],
