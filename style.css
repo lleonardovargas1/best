@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;
+}
+
+.titulo-loja {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #555;
+}
+
+.produto-detalhes {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.imagem img {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.info {
+    margin-left: 30px;
+    flex: 1;
+}
+
+.info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.info .categoria {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.info .preco {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info .descricao {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-voltar:hover {
+    background: #0056b3;
+}
+
+.mensagem-erro {
+    background: #fff3f3;
+    color: #a94442;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
