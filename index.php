@@ -1,4 +1,5 @@
 <?php
+include_once 'conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -6,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QGURI</title>
-  <link rel="stylesheet" href="styleindex.css">
+  <link rel="stylesheet" href="./styleindex.css">
 </head>
 <body>
   <header>
@@ -33,35 +34,27 @@
       <label><input type="checkbox"> Casa</label>
       <label><input type="checkbox"> Esporte</label>
     </aside>
-
     <section class="products">
-      <article class="product">
-        <img src="" alt="Produto 1">
-        <h3>Produto 1</h3>
-        <p>R$ 99,90</p>
-      </article>
-      <article class="product">
-        <img src="" alt="Produto 2">
-        <h3>Produto 2</h3>
-        <p>R$ 149,90</p>
-      </article>
-      <article class="product">
-        <img src="" alt="Produto 3">
-        <h3>Produto 3</h3>
-        <p>R$ 79,90</p>
-      </article>
-      <article class="product">
-        <img src="" alt="Produto 4">
-        <h3>Produto 4</h3>
-        <p>R$ 199,90</p>
-      </article>
+    <?php
+    $sql = 'SELECT * FROM coisas;';
+
+    $resultado = mysqli_query($conexao, $sql);
+
+    while($linha = mysqli_fetch_assoc($resultado)){
+      echo '<a href="produto.php" class="product">
+        <img src="'.$linha['Imagem'].'" alt="Produto 1">
+        <h3>'.$linha['Nome'].'</h3>
+        <p>R$ '.$linha['Preco'].'</p>
+      </a>';
+    }
+    ?>
     </section>
   </main>
 
   <footer>
-    <p>📞 (51) 99999-9999</p>
-    <p>🏬 Rua BLABLABLA, 123 - Porto Alegre - RS</p>
-    <p>🌐 Siga-nos: @lojaQGURIOFC</p>
+    <p>(51) 99999-9999</p>
+    <p> Rua BLABLABLA, 123 - Porto Alegre - RS</p>
+    <p> Siga: a gente @lojaQGURIOFC</p>
   </footer>
 </body>
 </html>

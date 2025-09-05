@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #4B0082, #1E90FF);
+    background: linear-gradient(90deg, #4B0082, #4f0270);
     padding: 15px;
     color: white;
   }
@@ -89,6 +89,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
+    text-decoration: none;
     text-align: center;
     transition: transform 0.2s;
   }
@@ -108,7 +109,7 @@
   }
   
   .product p {
-    color: #1E90FF;
+    color: #002f5e;
     font-weight: bold;
   }
   
@@ -118,7 +119,7 @@
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    border-top: 5px solid #1E90FF;
+    border-top: 5px solid #5e0a67;
   }
   
   footer p {
